@@ -1,0 +1,29 @@
+spring:
+    application:
+        name: kursovaya
+
+input:
+    file: src/main/files/input.txt
+
+output:
+    file: src/main/files/output.txt
+
+student:
+    name: "Kate"
+    last_name: "Ruadchikova"
+    group: "IKBO-36-22"
+
+datasource:
+    url: jdbc:postgresql://localhost:5432/games_db
+    username: postgres
+    password: rfnz22022202
+    driver-class-name: org.postgresql.Driver
+jpa:
+    hibernate:
+        ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+        hibernate:
+            format_sql: true
